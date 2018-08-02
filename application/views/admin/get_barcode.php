@@ -5,22 +5,18 @@
     <title>تسجيل مستخدم</title>
   </head>
   <body>
-    <form class="" action="" method="post">
-      <table>
-        <tbody>
+  <div class="container">
+    <form action="">
+        <h2>Lost User</h2>
+        <div class="form-group">
+            <div class="md-form form-lg">
+                <input type="text" id="barcode" name="barcode" class="form-control form-control-sm">
+                <label for="barcode" class="">Barcode</label>
+            </div>
+        </div>
 
-          <tr>
-            <td> <label for="">رقم الباركود</label> </td>
-            <td> <input type="text" name="barcode" value=""  required /> </td>
-          </tr>
-
-          <tr>
-            <td>  </td>
-            <td> <input type="submit" name="" value="حفظ"> </td>
-          </tr>
-
-        </tbody>
-      </table>
+        <a href="#" class="btn btn-rounded btn-lg waves-effect waves-light btn-success">Save <i class="glyphicon glyphicon-plus-ok"></i></a>
     </form>
+  </div>
   </body>
 </html>
