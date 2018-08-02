@@ -170,7 +170,7 @@ class Admin extends CI_Controller {
     if($_POST){
 
     } else {
-      $this -> load -> view();
+      $this -> load -> view('medical/question_page');
     }
 
   }
