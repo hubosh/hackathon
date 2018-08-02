@@ -16,6 +16,8 @@ body
 
 footer
 {
+    bottom: 0;
+    position: absolute;
     margin-top: 2em;
     background-color: #323131;
     padding: 10px;
