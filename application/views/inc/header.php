@@ -12,10 +12,10 @@
     <title>Maakom</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/mdb.min.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/style.min.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/style.css" rel="stylesheet">
 
   </head>
 

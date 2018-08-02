@@ -15,6 +15,7 @@
     background-color: #000000;
     width: 500px;
     height: 500px;
+
   }
 </style>
 
@@ -23,7 +24,7 @@
     <h1>هل انت مسجل بالنظام؟</h1>
 
     <div class="left">
-      نعم
+      <a href="#"></a>
     </div>
 
     <div class="right">

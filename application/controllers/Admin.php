@@ -159,21 +159,15 @@ class Admin extends CI_Controller {
         echo "<strong>تم تسجيلك , وجاري البحث عن زملاءك</strong>";
 
       }else{
+        $this->load->view('inc/header');
         $this->load->view('admin/lost_user');
+        $this->load->view('inc/footer');
       }
 
   }
   //end lost
 
-  public function need_medical_help(){
 
-    if($_POST){
-
-    } else {
-      $this -> load -> view('medical/question_page');
-    }
-
-  }
 
 }
 
