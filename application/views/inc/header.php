@@ -25,7 +25,7 @@
   <script src="<?=base_url();?>assets/js/mdb.min.js"></script>
     
   <div class="navbar-wrapper">
-        <nav class="navbar navbar-static-top navbar-expand-lg">
+        <nav class="navbar navbar-static-top navbar-expand-lg navbar-dark navbar-inverse">
             <div class="container">
                 <div class="navbar-header pull-left">
                     <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
