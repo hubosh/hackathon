@@ -80,5 +80,11 @@ footer
 .logo
 {
     height: 40px;
+    margin-top: -8px;
 }
 
+nav i
+{
+    font-size: large;
+    color: white
+}
