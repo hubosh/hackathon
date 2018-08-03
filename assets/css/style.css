@@ -1,17 +1,11 @@
 body
 {
-    min-height: 300px;
     background:url(../img/back.png) fixed center center fixed;
 }
 
 .navbar
 {
     background-color: #32526e;
-}
-
-.main_contier
-{
-    min-height: 500px;
 }
 
 #main-page
@@ -23,7 +17,7 @@ body
 footer
 {
     margin-top: 2em;
-    background-color: #32526e;
+    background-color: #323131;
     padding: 10px;
     color: white;
     line-height: 2em;
@@ -76,7 +70,14 @@ footer
     border-right:1pt solid #666;
 }
 
+.service h4
+{
+    font-weight: 400;
+    color: #32526e;
+}
+
 .logo
 {
     height: 40px;
 }
+
