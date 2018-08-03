@@ -1,6 +1,7 @@
 body
 {
     min-height: 300px;
+    background:url(../img/back.png) fixed center center fixed;
 }
 
 .main_contier
@@ -16,8 +17,6 @@ body
 
 footer
 {
-    bottom: 0;
-    position: absolute;
     margin-top: 2em;
     background-color: #323131;
     padding: 10px;
@@ -55,4 +54,24 @@ footer
 .lost .btn
 {
     margin: 3em 0em;
+}
+
+.services img
+{
+    height: 100px;
+}
+
+.service
+{
+    margin: 5em 0;
+}
+
+.service:first:child,.service:nth-child(2),.service:nth-child(4),.service:nth-child(5)
+{
+    border-right:1pt solid #666;
+}
+
+.logo
+{
+    height: 40px;
 }
