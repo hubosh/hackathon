@@ -9,5 +9,11 @@ class Medical extends CI_Controller {
     $this->load->library('session');
     $this->load->model("Groups_model");
     $this->load->model('Users_model');
-
   }
+
+  public function ask_help(){
+    
+  }
+
+}
+?>

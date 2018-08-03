@@ -49,18 +49,25 @@ class Admin extends CI_Controller {
               );
               $this -> Users_model -> add_user($data);
 
+              $this->load->view('inc/header');
               // generate QR
               echo "<h2>$u_code</h2>";
               echo "<img src='https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=$u_code&chld=M' width='400' height='400' />";
               echo "<br/>";
+              echo "<a href='javascript:window.print()' class='btn btn-success'> طباعة </a>";
+
+              $this->load->view('inc/footer');
 
             }
           }
         }
 
-      }
+      } else {
 
-		  $this->load->view('admin/register_user');
+        $this->load->view('inc/header');
+  		  $this->load->view('admin/register_user');
+        $this->load->view('inc/footer');
+      }
 	}
 
   // this for show user group
@@ -69,7 +76,9 @@ class Admin extends CI_Controller {
       if($_POST) {
 
         if(isset($_POST['add_users']) == true){
-          echo "add user is isset";
+
+          //echo "add user is isset";
+
           $group_code = $_POST['group_code'];
 
           // here start
@@ -112,30 +121,45 @@ class Admin extends CI_Controller {
              // this varable passed to front end
              $data['group_code'] = $group_code;
 
+             $this -> load -> view('inc/header');
+
+             echo "<br/><br/><br/>";
+             echo "<h1>";
+             echo "<center>";
+             echo "<strong>";
+
              foreach ($users as $value) {
                echo $value->name;
                echo " - ";
                if($value->lost == 1)
-                echo "<b style='color:red'>ضائع</b>";
+                echo "<b style='color:red'>Lost</b>";
                else
-                echo "<b style='Color:green'>متوفر</b>";
+                echo "<b style='Color:green'>Not lost</b>";
 
                 echo "<br/>";
              }
 
+             echo "</strong>";
+             echo "</center>";
+             echo "</h1>";
+
+             $this -> load -> view('inc/footer');
              // echo "<pre>";
              // print_r($users);
              // echo "</pre>";
 
           }else{
-            echo "عفوا, الباركود غير صحيح!";
+            $this -> load -> view('inc/header');
+            echo "<center><h1>Wrong barcode !</h1><center>";
+            $this -> load -> view('inc/footer');
           }
 
         }
 
       } else {
-
+        $this->load->view('inc/header');
         $this->load->view('admin/get_barcode.php');
+        $this->load->view('inc/footer');
       }
 
 
@@ -156,12 +180,17 @@ class Admin extends CI_Controller {
           $this-> Users_model -> edit_user(null , $_POST['phone']);
         }
 
-        echo "<strong>تم تسجيلك , وجاري البحث عن زملاءك</strong>";
+        $this->load->view('inc/header');
+        echo "<br/><br/><br/>";
+        echo "<center><h2>You have registred as lost!</h2></center>";
+        $this->load->view('inc/footer');
 
       }else{
+
         $this->load->view('inc/header');
         $this->load->view('admin/lost_user');
         $this->load->view('inc/footer');
+
       }
 
   }

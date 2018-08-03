@@ -20,6 +20,10 @@
   </head>
 
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
+  <script src="<?=base_url();?>assets/js/mdb.min.js"></script>
+  
     <div class="navbar-wrapper hidden-lg hidden-md hidden-sm">
         <nav class="navbar navbar-static-top navbar-expand-lg navbar-dark navbar-inverse">
             <div class="container">
