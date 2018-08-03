@@ -20,26 +20,32 @@
   </head>
 
 <body>
-<body>
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper hidden-lg hidden-md hidden-sm">
         <nav class="navbar navbar-static-top navbar-expand-lg navbar-dark navbar-inverse">
             <div class="container">
-                <div class="navbar-header pull-left">
-                    <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Maakom</a>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
+                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">English
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">EN</a></li>
-                            <li><a href="#">AR</a></li>
-                            <li><a href="#">TR</a></li>
-                            </ul>
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                </ul>
+                </div>
             </div>
         </nav>
     </div>
