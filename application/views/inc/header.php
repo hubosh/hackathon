@@ -23,12 +23,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
   <script src="<?=base_url();?>assets/js/mdb.min.js"></script>
-    
+
   <div class="navbar-wrapper">
         <nav class="navbar navbar-static-top navbar-expand-lg">
             <div class="container">
                 <div class="navbar-header pull-left">
-                    <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+                    <a class="navbar-brand" href="#"><img class="logo" src="<?=base_url()?>assets/img/logo.png"></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <ul class="nav navbar-nav">

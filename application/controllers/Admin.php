@@ -14,8 +14,9 @@ class Admin extends CI_Controller {
   }
 
   public function index(){
+    $this->load->view('inc/header');
     $this->load->view('admin/main');
-
+    $this->load->view('inc/footer');
   }
 
 	public function register_users()
