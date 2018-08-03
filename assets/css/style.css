@@ -4,6 +4,11 @@ body
     background:url(../img/back.png) fixed center center fixed;
 }
 
+.navbar
+{
+    background-color: #32526e;
+}
+
 .main_contier
 {
     min-height: 500px;
@@ -18,7 +23,7 @@ body
 footer
 {
     margin-top: 2em;
-    background-color: #323131;
+    background-color: #32526e;
     padding: 10px;
     color: white;
     line-height: 2em;
